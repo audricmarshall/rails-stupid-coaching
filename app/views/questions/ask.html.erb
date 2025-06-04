@@ -1,0 +1,9 @@
+<%# <h1>Questions#ask</h1>
+<p>Find me in app/views/questions/ask.html.erb</p>
+ %>
+ <%# je met en commentaire le contenu de base rails pour mettre le formulaire du coach %>
+<p>Ask your coach anything</p>
+<form action="/answer" method="get" data-turbo="false">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form>
