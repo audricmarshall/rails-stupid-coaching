@@ -1,2 +1,11 @@
-<h1>Questions#answer</h1>
+<%# <h1>Questions#answer</h1>
 <p>Find me in app/views/questions/answer.html.erb</p>
+ %>
+ <%# Pareil je ctrl shit : car je dois compléter la bonne view %>
+
+<!-- on affiche la question posée par l'user -->
+<p>Your question: <%= params[:question] %></p>
+<!-- on affich ela réponse gérée par le controller -->
+<p>Coach answer: <%= @answer %></p>
+<!-- lien pour retourner poser une question -->
+<%= link_to "Ask another question", ask_path %>
