@@ -18,3 +18,43 @@
   background: #f5f6fa;
   padding-top: 50px;
 }
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1.display-4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.custom-blockquote,
+.coach-blockquote {
+  border-left: 6px solid #ddd;
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+}
+
+.coach-blockquote {
+  background: #fff9db;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.blockquote-footer {
+  color: #888 !important;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 1rem;
+}

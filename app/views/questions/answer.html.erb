@@ -4,8 +4,19 @@
  <%# Pareil je ctrl shit : car je dois compléter la bonne view %>
 
 <!-- on affiche la question posée par l'user -->
-<p>Your question: <%= params[:question] %></p>
-<!-- on affich ela réponse gérée par le controller -->
-<p>Coach answer: <%= @answer %></p>
-<!-- lien pour retourner poser une question -->
-<%= link_to "Ask another question", ask_path %>
+<div class="container mt-5">
+  <h1 class="display-4 mb-4">Stupid Coaching</h1>
+
+  <blockquote class="blockquote mb-4 custom-blockquote">
+    <p class="mb-0 question-text">Your question: <%= params[:question] %></p>
+    <footer class="blockquote-footer">You</footer>
+  </blockquote>
+  <!-- on affich ela réponse gérée par le controller -->
+  <div class="blockquote mb-4 custom-blockquote coach-blockquote">
+    <p class="mb-0 font-weight-bold"><%= @answer %></p>
+    <footer class="blockquote-footer">Your coach</footer>
+  </div>
+  <!-- lien pour retourner poser une question -->
+  <%= link_to "Ask another question", ask_path, class: "btn btn-outline-primary mt-2" %>
+
+  </div>
